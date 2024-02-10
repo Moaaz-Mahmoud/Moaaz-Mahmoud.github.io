@@ -1,19 +1,19 @@
 [
     {
         "title": "How Things Can Go Wrong When You Ignore .gitignore",
-        "description": "",
+        "description": "This two-minute read discusses ignoring the .gitignore with Git/GitHub and offers a quick guide on how to recover from this mistake.",
         "link": "https://moaazm.medium.com/how-things-can-go-wrong-when-you-ignore-gitignore-e48d36d28720",
         "image_src": "images/blog-entries/dotgitignore.webp"
     },
     {
         "title": "How I Trained a CNN Model on a Large Dataset with Limited Resources: Incremental Learning in Action",
-        "description": "",
+        "description": "My team and I were trying to train a ML model on a binary dataset. The training job kept crashing due to memory over-utilization. This article outlines a solution using incremental learning to train a CNN model on a large dataset with limited resources, providing step-by-step instructions and code snippets for implementation.",
         "link": "https://moaazm.medium.com/how-i-trained-a-cnn-model-on-a-large-dataset-with-limited-resources-incremental-learning-in-action-6bb5ae2cdf5f",
         "image_src": "images/blog-entries/incremental_ml.webp"
     },
     {
         "title": "7 Git and GitHub Mistakes That Will Kill Your Reputation (And How to Avoid Them)",
-        "description": "",
+        "description": "This article discusses seven common Git and GitHub mistakes that can negatively impact a developer's reputation, along with strategies to avoid them. It emphasizes best practices such as using .gitignore, choosing descriptive branch names, and utilizing pull requests for code review.",
         "link": "https://moaazm.medium.com/avoid-these-7-common-mistakes-as-a-beginner-in-git-and-github-f0aa6a89f6fa",
         "image_src": "images/blog-entries/github7mistakes.webp"
     }
