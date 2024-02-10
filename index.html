@@ -45,7 +45,7 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Moaaz Mahmoud</h1>
+							<h1>Hi, I am Moaaz 👋</h1>
 							<p>
 								I can meow when there are no cats around
 							</p>
@@ -57,37 +57,16 @@
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Project Management API</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/Moaaz-Mahmoud/Project-Management-API" class="button" target="_blank">See project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button" target="_blank">See project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+						<!-- Project sections will be populated here -->
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>Find me Medium</h2>
+							<p>
+								
+							</p>
 							<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
@@ -145,6 +124,48 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Populate projects -->
+			<script>
+				// Function to fetch JSON data
+				async function fetchProjects() {
+					try {
+						const response = await fetch('projects.json');
+						const data = await response.json();
+						return data;
+					} catch (error) {
+						console.error('Error fetching projects:', error);
+					}
+				}
+	
+				// Function to populate project sections
+				async function populateProjects() {
+					const projects = await fetchProjects();
+	
+					if (projects) {
+						const sectionOne = document.getElementById('one');
+						projects.forEach(function(project) {
+							const section = document.createElement('section');
+							section.innerHTML = `
+								<a href="#" class="image"><img src=${project.image_src} alt="" data-position="center center" /></a>
+								<div class="content">
+									<div class="inner">
+										<h2>${project.title}</h2>
+										<p>${project.description}</p>
+										<ul class="actions">
+											<li><a href="${project.link}" class="button" target="_blank">See project</a></li>
+										</ul>
+									</div>
+								</div>
+							`;
+							sectionOne.appendChild(section);
+						});
+					}
+				}
+	
+				// Call the function to populate project sections
+				populateProjects();
+			</script>
 
 	</body>
 </html>
