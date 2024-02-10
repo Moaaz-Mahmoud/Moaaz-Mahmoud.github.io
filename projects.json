@@ -1,14 +1,14 @@
 [
     {
         "title": "Project Management API",
-        "description": "Phasellus convallis elit id ullamcorper ...",
+        "description": "A Flask/PostgreSQL REST API that offers RESTful endpoints for managing users, tasks, and their associations. Supports user registration, authentication, and admin privileges.",
         "link": "https://github.com/Moaaz-Mahmoud/Project-Management-API",
         "image_src": "images/projects/pic01.jpg"
     },
     {
-        "title": "Placeholder Project",
-        "description": "Placeholder Desctiption",
-        "link": "#",
+        "title": "Interview Scheduling API",
+        "description": "A Flask/SQLite REST API that provides endpoints for managing interviews. Provides endpoints for CRUD operations on interview records.",
+        "link": "https://github.com/Moaaz-Mahmoud/Interview-Scheduling-API",
         "image_src": "images/projects/pic02.jpg"
     }
 ]
