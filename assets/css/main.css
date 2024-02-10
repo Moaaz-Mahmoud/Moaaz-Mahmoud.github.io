@@ -3907,3 +3907,9 @@ input, select, textarea {
 			}
 
 		}
+
+		.profile-image {
+			float: right; /* Align the image to the right */
+			margin-left: 20px; /* Add some space between the image and text */
+		}
+		
