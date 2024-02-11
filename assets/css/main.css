@@ -3917,5 +3917,22 @@ input, select, textarea {
 			margin-left: 20px; /* Add some space between the image and text */
 		}
 
-		
+		.icon-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .icon-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; 
+            width: 100px;
+			color: #000000;
+        }
+        .icon-item img,
+		.icon-item .fa-brands.fa-docker {
+            max-width: 80%; 
+            max-height: 80%; 
+        }
 		

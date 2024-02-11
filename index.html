@@ -20,10 +20,9 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#intro">About</a></li>
 							<li><a href="#one">Projects</a></li>
 							<li><a href="#two">Blog</a></li>
-							
 						</ul>
 					</nav>
 					<div>
@@ -34,12 +33,11 @@
 									<li><a href="https://github.com/Moaaz-Mahmoud" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 									<li><a href="https://moaazm.medium.com/" class="icon brands fa-brands fa-medium" target="_blank"><span class="label">Medium</span></a></li>
 								</ul>
+								<a href="resume.pdf" class="icon brands" target="_blank">Full Resume&nbsp;&nbsp;<span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
 							</li>
 						</ul>
 					</div>
-					<div>
-						<a href="resume.pdf" class="icon brands" target="_blank">Full Resume <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
-					</div>
+					
 				</div>
 			</section>
 
@@ -52,23 +50,40 @@
 							<h1>Hi, I am Moaaz 👋</h1>
 							<p>
 								I love starting with small things, and build incrementally upon them. <br>
-								My tech stack:
+								
 							</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+							<h2>Main Stack</h2>
+							<div class="icon-grid">
+								<div class="icon-item"><img src="assets/icons/python.svg" alt="Python"></div>
+								<div class="icon-item"><img src="assets/icons/postgresql.svg" alt="PostgreSQL"></div>
+								<div class="icon-item"><img src="assets/icons/sqlalchemy.svg" alt="SQLAlchemy"></div>
+								<div class="icon-item"><img src="assets/icons/gnubash.svg" alt="GNU Bash"></div>
+								<div class="icon-item"><img src="assets/icons/git.svg" alt="Git"></div>
+								<div class="icon-item"><img src="assets/icons/github.svg" alt="GitHub"></div>
+								<div class="icon-item"><img src="assets/icons/sqlite.svg" alt="SQLite"></div>
+								<div class="icon-item"><img src="assets/icons/amazons3.svg" alt="Amazon S3"></div>
+								<div class="icon-item"><img src="assets/icons/docker.svg" alt="Amazon S3"></div>
+								<div class="icon-item"><img src="assets/icons/amazonec2.svg" alt="Amazon EC2"></div>
+							</div>
+							<br> <br>
+							<div>
+								<ul class="actions">
+									<li><a href="#one" class="button scrolly">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa-solid fa-chevron-down"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+								</ul>
+							</div>
 						</div>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<!-- Project sections will be populated here -->
+						
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>Find me Medium</h2>
+							<h2>Find me on Medium</h2>
 							<p>
 								
 							</p>
@@ -116,10 +131,11 @@
 	
 				// Function to populate project sections
 				async function populateProjects() {
+					const sectionOne = document.getElementById('one');
+
 					const projects = await fetchProjects();
 	
 					if (projects) {
-						const sectionOne = document.getElementById('one');
 						projects.forEach(function(project) {
 							const section = document.createElement('section');
 							section.innerHTML = `
@@ -137,6 +153,17 @@
 							sectionOne.appendChild(section);
 						});
 					}
+					
+					// const resumeLink = document.createElement('div')
+
+					// resumeLink.innerHTML = `
+					// 	<div class="content">
+					// 		<div class="inner">
+					// 			<a href="resume.pdf" class="icon brands" target="_blank">Full Resume <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					// 		</div>
+					// 	</div>
+					// `
+					// sectionOne.appendChild(resumeLink)
 				}
 	
 				// Call the function to populate project sections
