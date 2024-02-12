@@ -1,0 +1,50 @@
+[
+  {
+    "src": "assets/icons/python.svg",
+    "text": "Python"
+  },
+  {
+    "src": "assets/icons/flask.svg",
+    "text": "Flask"
+  },
+  {
+    "src": "assets/icons/flutter.svg",
+    "text": "Flutter"
+  },
+  {
+    "src": "assets/icons/postgresql.svg",
+    "text": "PostgreSQL"
+  },
+  {
+    "src": "assets/icons/sqlalchemy.svg",
+    "text": "SQLAlchemy"
+  },
+  {
+    "src": "assets/icons/gnubash.svg",
+    "text": "Bash"
+  },
+  {
+    "src": "assets/icons/git.svg",
+    "text": "Git"
+  },
+  {
+    "src": "assets/icons/github.svg",
+    "text": "GitHub"
+  },
+  {
+    "src": "assets/icons/sqlite.svg",
+    "text": "SQLite"
+  },
+  {
+    "src": "assets/icons/amazons3.svg",
+    "text": "Amazon S3"
+  },
+  {
+    "src": "assets/icons/docker.svg",
+    "text": "Docker"
+  },
+  {
+    "src": "assets/icons/amazonec2.svg",
+    "text": "Amazon EC2"
+  }
+]
