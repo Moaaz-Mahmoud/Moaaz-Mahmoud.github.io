@@ -1,7 +1,7 @@
 [
     {
         "title": "Project Management API",
-        "description": "A Flask/PostgreSQL REST API that offers RESTful endpoints for managing users, tasks, and their associations. Supports user registration, authentication, and admin privileges.",
+        "description": "A Flask/PostgreSQL REST API that provides endpoints for managing users, tasks, and their associations. Supports user registration, authentication, and admin privileges.",
         "link": "https://github.com/Moaaz-Mahmoud/Project-Management-API",
         "image_src": "assets/images/projects/pic01.jpg"
     },
