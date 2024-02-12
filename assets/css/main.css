@@ -3941,12 +3941,16 @@ input, select, textarea {
 			left: 0;
 			top: 0;
 			width: 100%;
-			height: 8%;
 			background-color: transparent;
-			color: #fff;
 			text-align: right;
 			padding: 10px;
 			z-index: 1000; /* Ensure the bar appears above other content */
+		}
+		.floating-bar a {
+			color: rgba(255, 255, 255, 0.55);
+		}
+		.floating-bar a:hover {
+			color: #ffffff;
 		}
 		
 		
