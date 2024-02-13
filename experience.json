@@ -2,13 +2,14 @@
     {
         "company": "Woven (Freelance)",
         "role": "Software Engineering Assessment Scorer",
-        "date": "Sep. 2021 - Present",
-        "description": "Meow meow"
+        "date": "Sep. 2021 ― Present",
+        "description": "<ul><li>Evaluate candidates' responses for adherence to best engineering practices in a variety of technical assessments.</li><li>Review and hand results to the clients (hiring managers at tech companies).</li><li>Assessments include coding challenges, collaboration scenarios (emails, customer support tickets), system design, and other formats.</li></ul>"
+        
     },
     {
         "company": "AppStart (Self-Employed)",
         "role": "Flutter Mobile App Developer",
-        "date": "Oct. 2021 - Present",
-        "description": "Meow meow"
+        "date": "Oct. 2021 ― Present",
+        "description": "<ul></ul>"
     }
 ]
