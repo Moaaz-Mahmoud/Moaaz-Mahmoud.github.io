@@ -49,6 +49,7 @@
 					<li><a href="#intro">About</a></li>
 					<li><a href="#one">Projects</a></li>
 					<li><a href="#two">Blog</a></li>
+					<li><a href="#three">Experience</a></li>
 				</ul>
 			</nav>
 			<div>
@@ -98,9 +99,6 @@
 		<section id="two" class="wrapper style3 fade-up">
 			<div class="inner">
 				<h2>Find me on Medium</h2>
-				<p>
-
-				</p>
 				<div class="features" id="blog-entries">
 					<!-- Blog entries will be populated here -->
 				</div>
@@ -109,16 +107,21 @@
 							</ul> -->
 			</div>
 		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style4 fade-up">
+			<!-- Experience will be populated here -->
+		</section>
 	</div>
 
 	<!-- Footer -->
-	<!-- <footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer> -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -197,10 +200,12 @@
 								<span class="icon solid major fa-bookmark"></span>
 								<a href="${entry.link}" target="_blank"><h3>${entry.title}</h3></a>
 								<p>${entry.description}</p>
-								<ul class="actions">
-									<li><a href="${entry.link}" class="button" target="_blank">View on Medium</a></li>
-								</ul>
+								
 							`;
+							// Stash this button for now
+							// <ul class="actions">
+							// 	<li><a href="${entry.link}" class="button" target="_blank">View on Medium</a></li>
+							// </ul>
 					blogEntriesContainer.appendChild(section);
 				});
 			}
@@ -210,6 +215,7 @@
 		populateBlogEntries();
 	</script>
 
+	<!-- Populate tech stack icons -->
 	<script>
 		// Fetch the data from the JSON file
 		fetch('tech-icons.json')
@@ -246,6 +252,43 @@
 			});
 		})
 		.catch(error => console.error('Error fetching tech stack elements:', error));
+	</script>
+
+	<!-- Populate experience items -->
+	<script>
+		// Function to fetch JSON data for experience items
+		async function fetchExperienceItems() {
+			try {
+				const response = await fetch('experience.json');
+				const data = await response.json();
+				return data;
+			} catch (error) {
+				console.error('Error fetching experience items:', error);
+			}
+		}
+
+		// Function to populate experience items
+		async function populateExperienceItems() {
+			const experienceSection = document.getElementById('three');
+			const experienceItems = await fetchExperienceItems();
+
+			if (experienceItems) {
+				experienceItems.forEach(function (item) {
+					const div = document.createElement('div');
+					div.classList.add('experience-item');
+					div.innerHTML = `
+						<h3>${item.company}</h3>
+						<p>${item.role}</p>
+						<p>${item.date}</p>
+						<p>${item.description}</p>
+					`;
+					experienceSection.appendChild(div);
+				});
+			}
+		}
+
+		// Call the function to populate experience items
+		populateExperienceItems();
 	</script>
 
 </body>
