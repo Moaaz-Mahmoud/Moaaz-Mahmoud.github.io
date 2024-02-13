@@ -215,6 +215,9 @@
 		fetch('tech-icons.json')
 		.then(response => response.json())
 		.then(data => {
+			// We have two arrays nested in an array within the json file -- one for active icons, and
+			// one for the stashed icons
+			data = data[0]  
 			// Get the container element
 			const iconGrid = document.getElementsByClassName('icon-grid')[0];
 			
