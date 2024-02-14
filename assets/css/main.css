@@ -3949,6 +3949,12 @@ input, select, textarea {
 			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 		}
 
+		/* Intro */
+		#intro-text {
+			max-width: 75%;
+		}
+
+		/* Tech stack */
 		.icon-grid {
             display: grid;
             grid-template-columns: repeat(4, 0.13fr);
@@ -3987,6 +3993,7 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+		/* Floating bar */
 		.floating-bar {
 			position: fixed;
 			left: 0;
