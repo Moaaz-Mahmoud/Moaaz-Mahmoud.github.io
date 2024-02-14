@@ -3930,18 +3930,31 @@ input, select, textarea {
 			Moaaz Edits
 		*/
 
+		/* Generic */
 		.profile-image {
 			float: right; /* Align the image to the right */
 			margin-left: 20px; /* Add some space between the image and text */
 		}
+		.card {
+			width: 90%;
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			padding: 2em;
+			margin-bottom: 2em;
+			transition: all 0.3s ease-in-out;
+		}
+		.card:hover {
+			transform: translateY(-5px);
+			color: white;
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+		}
 
 		.icon-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 0.13fr);
             gap: 20px;
         }
         .tech-icon {
-            /* display: flex; */
             justify-content: center;
             align-items: center;
             height: 100px; 
@@ -3955,6 +3968,8 @@ input, select, textarea {
             max-height: 80%; 
 			min-width: 80%;
 			min-height: 100%;
+
+			transition: opacity 0.3s ease-out;
         }
 		.tech-icon:hover img {
 			opacity: 0;
@@ -3966,7 +3981,7 @@ input, select, textarea {
 			font-size: larger;
 			transform: translate(-50%, -50%);
 			opacity: 0;
-			transition: opacity 0.3s ease;
+			transition: opacity 0.2s ease-in;
 		}
 		.tech-icon:hover .alt-text {
 			opacity: 1;
@@ -3980,7 +3995,8 @@ input, select, textarea {
 			height: 6%;
 			background-color: transparent;
 			text-align: right;
-			padding: 10px;
+			font-size: x-large;
+			padding: 0.5%;
 			z-index: 1000; /* Ensure the bar appears above other content */
 		}
 		.floating-bar a {
@@ -4018,7 +4034,7 @@ input, select, textarea {
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			padding: 2em;
 			margin-bottom: 2em;
-			transition: all 0.3s ease;
+			transition: all 0.3s ease-in-out;
 		}
 		.experience-item:hover {
 			transform: translateY(-5px);
@@ -4049,4 +4065,48 @@ input, select, textarea {
 		}
 		.blog-entry:hover {
 			transform: translateY(-4px); /* Adjust as needed */
+		}
+
+		/* Contact card */
+		.contact-card {
+			width: 100%;
+			padding: 20px;
+			margin-top: 20px;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		}
+		.contact-content {
+			text-align: left;
+		}
+		.contact-content h2 {
+			text-align: center;
+			margin-bottom: 15px;
+			font-size: 24px;
+		}
+		.contact-content ul {
+			padding: 0;
+			list-style: none;
+		}
+		.contact-content ul li {
+			margin-bottom: 10px;
+		}
+		.contact-content ul li a {
+			/* color: #333; */
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.contact-content ul li a i {
+			margin-right: 10px;
+			font-size: 18px;
+		}
+		.contact-content ul li a:hover {
+			color: #007bff;
+		}
+		
+		/* Copyright */
+		#copyright {
+			text-align: center;
+			padding-top: 10%;
+			padding-bottom: 1%;
 		}

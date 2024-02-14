@@ -1,15 +1,15 @@
 [
     {
+        "company": "AppStart (Self-Employed)",
+        "role": "Mobile App Developer (Flutter)",
+        "date": "Oct. 2023 ― Present",
+        "description": "<ul><li>Collaborating with team members to design, develop and deliver user-friendly mobile applications with Flutter.</li><li>Implementing custom features and functionalities based on client requirements.</li></ul>"
+    },
+    {
         "company": "Woven (Freelance)",
         "role": "Software Engineering Assessment Scorer",
         "date": "Sep. 2021 ― Present",
         "description": "<ul><li>Evaluate candidates' responses for adherence to best engineering practices in a variety of technical assessments.</li><li>Review and hand results to the clients (hiring managers at tech companies).</li><li>Assessments include coding challenges, collaboration scenarios (emails, customer support tickets), system design, and other formats.</li></ul>"
         
-    },
-    {
-        "company": "AppStart (Self-Employed)",
-        "role": "Flutter Mobile App Developer",
-        "date": "Oct. 2021 ― Present",
-        "description": "<ul></ul>"
     }
 ]

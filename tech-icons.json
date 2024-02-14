@@ -21,6 +21,10 @@
       "text": "SQLAlchemy"
     },
     {
+      "src": "assets/icons/sqlite.svg",
+      "text": "SQLite"
+    },
+    {
       "src": "assets/icons/gnubash.svg",
       "text": "Bash"
     },
@@ -31,10 +35,6 @@
     {
       "src": "assets/icons/github.svg",
       "text": "GitHub"
-    },
-    {
-      "src": "assets/icons/sqlite.svg",
-      "text": "SQLite"
     },
     {
       "src": "assets/icons/docker.svg",

@@ -116,10 +116,20 @@
 
 	<!-- Footer -->
 	<footer id="footer" class="wrapper style1-alt">
+		
 		<div class="inner">
-			<ul class="menu">
-				<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
+			<div class="card contact-card">
+				<div class="contact-content">
+					<h2>Get in Touch</h2>
+					<ul>
+						<li><i class="fas fa-phone"></i> <span>+201121596166</span></li>
+						<li><i class="fas fa-envelope"></i> moaaz.mahmoud.dev@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+			<div id="copyright">
+				<span class="menu">&copy; Moaaz Mahmoud. All rights reserved.</span>
+			</div>
 		</div>
 	</footer>
 
@@ -199,9 +209,12 @@
 					section.innerHTML = `
 								<span class="icon solid major fa-bookmark"></span>
 								<div class="blog-entry">
-									<a href="${entry.link}" target="_blank"><h3>${entry.title}</h3></a>
+									<a href="${entry.link}" target="_blank">
+										<h3>${entry.title}</h3>
+										<div><p>${entry.description}</p></div>
+									</a>
 								</div>
-								<span>${entry.description}</span>
+								
 							`;
 							// Stash this button for now (could be forever)
 							// <ul class="actions">
@@ -276,6 +289,7 @@
 			if (experienceItems) {
 				experienceItems.forEach(function (item) {
 					const div = document.createElement('div');
+					div.classList.add('card');
 					div.classList.add('experience-item');
 					div.innerHTML = `
 						<h3>${item.company} <span class="experience-date">${item.date}</span></h3>
