@@ -9,7 +9,7 @@
         "company": "Woven (Freelance)",
         "role": "Software Engineering Assessment Scorer",
         "date": "Sep. 2021 ― Present",
-        "description": "<ul><li>Evaluate candidates' responses for adherence to best engineering practices in a variety of technical assessments.</li><li>Review and hand results to the clients (hiring managers at tech companies).</li><li>Assessments include coding challenges, collaboration scenarios (emails, customer support tickets), system design, and other formats.</li></ul>"
+        "description": "<ul><li>Evaluate candidates' responses for adherence to best engineering practices in a variety of technical assessments.</li><li>Review and hand results to the clients (hiring managers at tech companies).</li><li>Assessments include coding challenges, collaboration scenarios (emails, customer support tickets), system design, and other formats.</li><li>Ported a data science challenge from Pandas to PySparkling. Created a reference solution and implemented unit tests.</li></ul>"
         
     }
 ]
