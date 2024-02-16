@@ -1,7 +1,7 @@
 [
   [
     {
-      "src": "assets/icons/python.svg",
+      "src": "assets/icons/python-svgrepo-com.svg",
       "text": "Python"
     },
     {
@@ -9,11 +9,11 @@
       "text": "Flask"
     },
     {
-      "src": "assets/icons/flutter.svg",
+      "src": "assets/icons/flutter-svgrepo-com.svg",
       "text": "Flutter"
     },
     {
-      "src": "assets/icons/postgresql.svg",
+      "src": "assets/icons/postgresql-svgrepo-com.svg",
       "text": "PostgreSQL"
     },
     {
@@ -21,15 +21,15 @@
       "text": "SQLAlchemy"
     },
     {
-      "src": "assets/icons/sqlite.svg",
+      "src": "assets/icons/sqlite-svgrepo-com.svg",
       "text": "SQLite"
     },
     {
-      "src": "assets/icons/gnubash.svg",
+      "src": "assets/icons/bash-icon-svgrepo-com.svg",
       "text": "Bash"
     },
     {
-      "src": "assets/icons/git.svg",
+      "src": "assets/icons/git-svgrepo-com.svg",
       "text": "Git"
     },
     {
@@ -37,7 +37,7 @@
       "text": "GitHub"
     },
     {
-      "src": "assets/icons/docker.svg",
+      "src": "assets/icons/docker-svgrepo-com.svg",
       "text": "Docker"
     }
   ],

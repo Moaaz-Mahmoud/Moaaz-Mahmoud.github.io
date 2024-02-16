@@ -3966,8 +3966,8 @@ input, select, textarea {
 		/* Tech stack */
 		.icon-grid {
             display: grid;
-            grid-template-columns: repeat(4, 0.13fr);
-            gap: 20px;
+            grid-template-columns: repeat(4, 0.15fr);
+            row-gap: 60px;
         }
         .tech-icon {
             justify-content: center;
@@ -3984,7 +3984,7 @@ input, select, textarea {
 			min-width: 80%;
 			min-height: 100%;
 
-			transition: opacity 0.3s ease-out;
+			transition: opacity 0.2s ease-out;
         }
 		.tech-icon:hover img {
 			opacity: 0;
@@ -3997,6 +3997,7 @@ input, select, textarea {
 			transform: translate(-50%, -50%);
 			opacity: 0;
 			transition: opacity 0.2s ease-in;
+			color: #fff;
 		}
 		.tech-icon:hover .alt-text {
 			opacity: 1;
@@ -4048,7 +4049,7 @@ input, select, textarea {
 			/* background-color: #5b419e; */
 			background: linear-gradient(
 				to bottom right,
-				#2e1a5f, #3d2e61
+				rgba(109, 87, 164, 0.8), rgba(83, 57, 148, 0.8)
 			);
 			border-radius: 8px;
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
