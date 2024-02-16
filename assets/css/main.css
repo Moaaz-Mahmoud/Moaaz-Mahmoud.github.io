@@ -3254,7 +3254,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			/* background-color: #493382; */
+			background-color: rgb(33, 33, 33);
 		}
 
 		.wrapper.style2 {
@@ -3267,6 +3268,10 @@ input, select, textarea {
 
 		.wrapper.style3 {
 			background-color: #5e42a6;
+			/* background: linear-gradient(
+				to bottom right,
+				#190c3a, #160a33
+			); */
 		}
 
 		.wrapper.style3-alt {
@@ -3275,6 +3280,10 @@ input, select, textarea {
 
 		.wrapper.style4 {
 			background-color: #d49bff; /* Example color from the palette */
+			/* background: linear-gradient(
+				to bottom right,
+				#31215a, #5c2bcc
+			); */
 		}
 		
 		.wrapper.style4-alt {
@@ -3945,7 +3954,7 @@ input, select, textarea {
 		}
 		.card:hover {
 			transform: translateY(-5px);
-			color: white;
+			/* color: white; */
 			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 		}
 
@@ -4036,7 +4045,11 @@ input, select, textarea {
 
 		/* Experience items */
 		.experience-item {
-			background-color: #5b419e;
+			/* background-color: #5b419e; */
+			background: linear-gradient(
+				to bottom right,
+				#2e1a5f, #3d2e61
+			);
 			border-radius: 8px;
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 			padding: 2em;
