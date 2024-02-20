@@ -73,9 +73,9 @@
 				<p id="intro-text">
 					<!-- I love starting with small things, and build incrementally upon them. <br> -->
 					<!-- Software Engineer | Backend & Mobile | Always Learning <br> -->
-					I'm a backend enthusiast at heart, fluent with Python, Flask, and PostgreSQL. <br>
+					I'm a backend enthusiast at heart, fluent with Python, Flask, PostgreSQL, and C++. <br>
 					Whether it's crafting intuitive mobile apps with Flutter or designing robust backend APIs, 
-					I'm passionate about creating experiences that work flawlessly. <br>
+					I'm passionate about creating experiences that work smoothly. <br>
 					I believe great things start small. I love taking small, incremental steps, iterating as I go.
 				</p>
 				<h2>Tech Stack</h2>
@@ -218,8 +218,9 @@
 			if (projects) {
 				projects.forEach(function (project) {
 					const section = document.createElement('section');
+					// project image
+					// <a href="#" class="image"><img src=${project.image_src} alt="" data-position="center center" /></a>
 					section.innerHTML = `
-								<a href="#" class="image"><img src=${project.image_src} alt="" data-position="center center" /></a>
 								<div class="content">
 									<div class="inner">
 										<h2>${project.title}</h2>
