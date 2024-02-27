@@ -16,5 +16,11 @@
         "description": "Analyzed data science salaries, considering location, experience, and other factors.<br><br>Identified key findings, including the impact of the pandemic on the salaries, with a notable decline in 2021 and rapid recovery in 2022, suggesting their higher susceptibility to pandemic impacts.",
         "link": "https://github.com/Moaaz-Mahmoud/Data-Science-Salaries-Analysis",
         "image_src": "assets/images/projects/pic02.jpg"
+    },
+    {
+        "title": "Personal Medical Charges Prediction",
+        "description": "A model that predicts an individual's insurance charges.",
+        "link": "https://github.com/Moaaz-Mahmoud/Personal-Medical-Charges-Prediction",
+        "image_src": "assets/images/projects/pic02.jpg"
     }
 ]
