@@ -1,8 +1,33 @@
+
+
 [
     {
         "company": "Woven (Freelance)",
-        "role": "Software Engineering Assessment Scorer",
-        "date": "Sep. 2021 ― Present",
-        "description": "<ul><li>I review and evaluate job candidates' responses to various technical assessments with a focus on engineering practices.<li>I work with my team to evaluate candidates' thought process, what they consider, and what they overlook when solving engineering problems.</ul>"
+        "roles": [
+            {
+                "title": "Recommendations/Feedback Team Member",
+                "period": "Apr. 2024 ― Present",
+                "description": [
+                    "Reviewing scorings as part of our QA process.",
+                    "Delivering feedback reports to both clients and candidates."
+                ]
+            },
+            {
+                "title": "Senior Assessment Scorer",
+                "period": "Jan. 2022 ― Mar. 2024",
+                "description": [
+                    "Reviewed peers' scorings.",
+                    "Contributed to the process documentation."
+                ]
+            },
+            {
+                "title": "Software Engineering Assessment Scorer",
+                "period": "Sep. 2021 ― Dec. 2021",
+                "description": [
+                    "Evaluated job candidates' responses to various technical assessments, with a focus on engineering practices.",
+                    "Worked with my team to evaluate candidates' thought process, what they consider, and what they overlook when solving engineering problems."
+                ]
+            }
+        ]
     }
 ]

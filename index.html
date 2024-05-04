@@ -74,8 +74,8 @@
 					<!-- I love starting with small things, and build incrementally upon them. <br> -->
 					<!-- Software Engineer | Backend & Mobile | Always Learning <br> -->
 					I'm a backend enthusiast at heart, fluent with Python, Flask, PostgreSQL, and C++. <br>
-					Whether it's crafting intuitive mobile apps with Flutter or designing robust backend APIs, 
-					I'm passionate about creating experiences that work smoothly. <br>
+					<!-- Whether it's crafting intuitive mobile apps with Flutter or designing robust backend APIs, 
+					I'm passionate about creating experiences that work smoothly. <br> -->
 					I believe great things start small. I love taking small, incremental steps, iterating as I go.
 				</p>
 				<h2>Tech Stack</h2>
@@ -124,7 +124,7 @@
 		
 		<div class="inner">
 			<div class="contact-content">
-				<h2>Looking for a skilled backend / mobile app developer?</h2>
+				<h2>Looking for a skilled backend developer?</h2>
 				<h2>Let's get in touch!</h2>
 				<ul>
 					<li><i class="fas fa-phone"></i> &nbsp;<span>+201121596166</span></li>
@@ -303,20 +303,33 @@
 			const experienceItems = await fetchExperienceItems();
 
 			if (experienceItems) {
-				experienceItems.forEach(function (item) {
+				experienceItems.forEach(function (company) {
 					const div = document.createElement('div');
 					div.classList.add('card');
 					div.classList.add('experience-item');
+
+					let rolesHTML = '';
+					company.roles.forEach(function (role) {
+						let descriptionItems = role
+											   .description
+											   .map((line)=>`<li>${line}</li>`)
+											   .join('')
+						rolesHTML += `
+							<h4>${role.title} <span class="experience-date">${role.period}</span></h4>
+							<ul>${descriptionItems}</ul>
+						`;
+					});
+
 					div.innerHTML = `
-						<h3>${item.company} <span class="experience-date">${item.date}</span></h3>
-						<p>${item.role}</p>
-						<p></p>
-						<p>${item.description}</p>
+						<h3>${company.company}</h3>
+						${rolesHTML}
 					`;
+
 					experienceSection.appendChild(div);
 				});
 			}
 		}
+
 
 		// Call the function to populate experience items
 		populateExperienceItems();
